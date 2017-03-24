@@ -1,6 +1,6 @@
 var femaleNames = ['Asia', 'Kasia', 'Ola', 'Jola']; 
 var maleNames = ['Piotrek', 'Marek', 'Arek', 'Jarek'];
-var allNames;
+var allNames = femaleNames.concat(maleNames);
 
 console.log(femaleNames);
 console.log(maleNames);
@@ -9,11 +9,11 @@ var allNames = femaleNames.concat(maleNames);
 
 console.log(allNames);
 
-var newName =prompt("Podaj imię:");
+var newName = prompt("Podaj imię:");
 
-if(allNames.indexOf(newName) === -1){
+if (allNames.indexOf(newName) === -1) {
 	allNames.push(newName);
-}else{
+} else {
 	console.log("Imię już wystepuje w tabeli.");
 }
 	
