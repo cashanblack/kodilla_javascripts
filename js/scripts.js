@@ -1,23 +1,20 @@
-function rysujChoinke(iloscRzedowChoinki){
-	for ( var wierszChoinki = 1 ; wierszChoinki < iloscRzedowChoinki+1 ; wierszChoinki++) 
-		{
+function drawTree(treeRowsNo){
+	for (var treeRow = 1 ; treeRow < treeRowsNo + 1 ; treeRow++) {
 			var star = "";
-			var iloscSpacji=0;
+			var spaceNo = 0;
 			
-			for ( var bombka = 0 ; bombka < (wierszChoinki * 2) - 1 ; bombka++) 
-				{
-					star += "*";
-				}
+			for (var pcs = 0 ; pcs < (treeRow * 2) - 1 ; pcs++) {
+				star += "*";
+			}
 				
-			for ( var iloscSpacji = 0 ; iloscSpacji < (iloscRzedowChoinki-wierszChoinki) ; iloscSpacji++) 
-				{
-					star = " " + star;
-				}
+			for (var spaceNo = 0 ; spaceNo < (treeRowsNo-treeRow) ; spaceNo++) {
+				star = " " + star;
+			}
 				
 			console.log(star)
-		}
+	}
 	
 }
 
-var wysokoscChoinki = parseInt(prompt("Podaj wysokość choinki:"));
-rysujChoinke(wysokoscChoinki);
+var treeHeight = parseInt(prompt("Podaj wysokość choinki:"));
+rysujChoinke(treeHeight);
