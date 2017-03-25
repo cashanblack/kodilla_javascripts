@@ -7,7 +7,7 @@ var tablica = text.split(' '); // rozwalamy  text na tablice
 tablica[0] = animal; // pierwszy element tablicy = pierwszemu wyrazowi podmieniamy na nowe zwierzatko
 text=tablica.join(" "); // sklajamy tablice w text ponownie
 
-text = text.replace('Papugi', animal);
+//text = text.replace('Papugi', animal);
 
 console.log("Pełen text: " + text);
 console.log("Połowa textu: " + text.substr(0, text.length / 2));
